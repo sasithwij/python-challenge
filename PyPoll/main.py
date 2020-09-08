@@ -2,7 +2,7 @@ import os
 import csv
 
 # Path to collect data from the Resources folder
-electiondata_csv = os.path.join('PyPoll','Resources','election_data.csv')
+electiondata_csv = os.path.join('Resources','election_data.csv')
 
 # Read csv file
 with open(electiondata_csv) as csvfile:
@@ -45,7 +45,7 @@ tooleyvotes= votesdict["O'Tooley"]
 tooleypercent= votesdictpercent["O'Tooley"]
 
 #Output to text file
-outputtxt = open(os.path.join('PyPoll','analysis','analysis.txt'),"w")
+outputtxt = open(os.path.join('analysis','analysis.txt'),"w")
 print("Election Results", file= outputtxt)
 print("---------------------------", file= outputtxt)
 print(f'Total Votes: {totalvotes}', file= outputtxt)

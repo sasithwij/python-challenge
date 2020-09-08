@@ -2,7 +2,7 @@ import os
 import csv
 
 # Path to collect data from the Resources folder
-budgetdata_csv = os.path.join('PyBank','Resources','budget_data.csv')
+budgetdata_csv = os.path.join('Resources','budget_data.csv')
 
 # Read csv file
 with open(budgetdata_csv) as csvfile:
@@ -37,7 +37,7 @@ with open(budgetdata_csv) as csvfile:
     minaveragechangedate = str(date[profitloss_change.index(minaveragechange)+1]) 
 
     #Output to text file
-    outputtxt = open(os.path.join('PyBank','analysis','analysis.txt'),"w")
+    outputtxt = open(os.path.join('analysis','analysis.txt'),"w")
     print("Financial Analysis", file= outputtxt)
     print("-----------------------", file= outputtxt)
     # Print count of all months by find lenth of data list
