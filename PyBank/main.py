@@ -25,7 +25,8 @@ with open(budgetdata_csv) as csvfile:
     for i in range(1,len(profitloss)):
 
         profitloss_change.append(profitloss[i] - profitloss[i -1])
-        
+
+    #Find average of changes    
     averagechange = int(sum(profitloss_change) / len(profitloss_change))
     #Find max profitloss change
     maxaveragechange = int(max(profitloss_change))
